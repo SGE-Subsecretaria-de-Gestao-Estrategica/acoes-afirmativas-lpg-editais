@@ -1,0 +1,37 @@
+# Ambientes Python
+.venv/
+venv/
+venv_py311/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Segredos (chaves de API, URLs internas)
+.env
+*.env
+!.env.example
+
+# Dados: editais em PDF, extrações, planilhas e bases externas ficam fora do repositório
+data/
+models/
+src/outputs/
+*.xlsx
+*.xls
+*.csv
+*.parquet
+*.pkl
+~$*
+
+# Exploração local
+notebooks/
+tratamento/
+resultados/
+*.ipynb
+
+# Ferramentas de design e editor
+.impeccable/
+DESIGN.md
+PRODUCT.md
+.DS_Store
+.vscode/
+.idea/

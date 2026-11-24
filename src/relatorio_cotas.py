@@ -783,7 +783,7 @@ details.lista p {{ font-size:14px; color:var(--tinta-2); margin-top:8px; line-he
 
 def fontes_embutidas() -> str:
     """@font-face com woff2 em base64: a página funciona offline e no SharePoint, sem CDN."""
-    pasta = ROOT / "relatorios" / "fontes"
+    pasta = Path(__file__).resolve().parent / "fontes"
     faces = [("Public Sans", "public-sans", w) for w in (400, 500, 600, 700)]
     faces += [("Source Serif 4", "source-serif-4", w) for w in (400, 600)]
     out = []
